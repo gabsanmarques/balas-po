@@ -1,6 +1,5 @@
 #ifndef NODE_H
 #define NODE_H
-#define SAFE_FREE(ptr) if (ptr != NULL) { free(ptr); ptr = NULL; }
 
 #include "problem.h"
 #include "node.h"

@@ -27,9 +27,7 @@ void balas(Problem *problem, Node *node, int level)
             problem->result = node->j;
         } else if(node->z < problem->global_z) {
             problem->global_z = node->z;
-            int *old_result = problem->result;
-            problem->result = node->j;
-            SAFE_FREE(old_result);
+            memcpy(problem->result, node->j, sizeof(int) * problem->n_coefficients);
         }
     }
 

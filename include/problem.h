@@ -1,6 +1,6 @@
 #ifndef PROBLEM_H
 #define PROBLEM_H
-#define SAFE_FREE(ptr) if (ptr != NULL) { free(ptr); ptr = NULL; }
+#define SAFE_FREE(ptr) if (ptr) { free(ptr); ptr = NULL; }
 
 #include <stdlib.h>
 #include <stdio.h>
