@@ -104,7 +104,7 @@ void balas(Problem *problem, Node *node, int level)
             node->fathomed = 1;
             for(int l = 0; l < level; l++)
                 printf("\t");
-            printf("Infeasible solution: %d > %d at restriction %d!\n", sum, node->s[i], i+1);
+            printf("Infeasible solution: %d > %d at constraint %d!\n", sum, node->s[i], i+1);
             return;
         }
     }
